@@ -17,6 +17,13 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     public bool isGrounded;
 
+    bool inputEnabled = false;
+
+    public bool inHelicopter = true;
+
+    public Vector3 myPos;
+    public Transform Helicopter;
+
     AudioSource playerFX;
     [SerializeField] AudioClip footSteps;
 
@@ -29,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
+        if (inHelicopter && Input.GetKey(KeyCode.E)){
+            transform.position = Helicopter.position + myPos;
+        }
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if(isGrounded && velocity.y < 0)
@@ -70,5 +80,21 @@ public class PlayerMovement : MonoBehaviour
 
         character.Move(velocity * Time.deltaTime);
 
+        if (inputEnabled == true)
+        {
+            transform.Translate(Vector3.right * 5 * Input.GetAxisRaw("Horizontal") * Time.deltaTime);
+            transform.Translate(Vector3.up * 5 * Input.GetAxisRaw("Vertical") * Time.deltaTime);
+        }
+
+    }
+
+    void Activate()
+    {
+        inputEnabled = true;
+    }
+
+    void Deactivate()
+    {
+        inputEnabled = true;
     }
 }
