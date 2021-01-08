@@ -6,7 +6,7 @@ public class Mover : MonoBehaviour
 {
     Rigidbody rb;
 
-    [SerializeField] float speed = 80f;
+    float speed = 150f;
    
 
     // Start is called before the first frame update
@@ -17,6 +17,10 @@ public class Mover : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
+    }
     // Update is called once per frame
     void Update()
     {

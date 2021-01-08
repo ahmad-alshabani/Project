@@ -65,8 +65,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4387638107276554849, guid: a096dda1cd3d5b648be8425b990bc0dc, type: 3}
-  - {fileID: 7347949212528627919, guid: a096dda1cd3d5b648be8425b990bc0dc, type: 3}
+  - {fileID: 4387638107276554849, guid: 380e396e9ff275a4295a3619da19b24b, type: 3}
+  - {fileID: 7347949212528627919, guid: 380e396e9ff275a4295a3619da19b24b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -300,6 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Helicopter: {fileID: 0}
   pos: {x: 0, y: 0, z: 0}
+  myPos: {x: 0, y: 0, z: 0}
   animator: {fileID: 1920250961265943348}
   Target: {fileID: 0}
   RotationSpeed: 2
@@ -495,8 +496,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -454857502957749149, guid: a096dda1cd3d5b648be8425b990bc0dc, type: 3}
-  - {fileID: 772359722248288438, guid: a096dda1cd3d5b648be8425b990bc0dc, type: 3}
+  - {fileID: -454857502957749149, guid: 380e396e9ff275a4295a3619da19b24b, type: 3}
+  - {fileID: 772359722248288438, guid: 380e396e9ff275a4295a3619da19b24b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

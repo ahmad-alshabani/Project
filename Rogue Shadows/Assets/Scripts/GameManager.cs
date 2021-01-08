@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public string fpsScr, weaponScr, cameraScr, heliScript,heliCamScr;
     public int inControl = 1;
 
+    AudioSource sound;
+    [SerializeField] AudioClip theme;
+
     public Transform heli;
     public Transform fpsPlayer;
 
@@ -21,12 +24,18 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sound = GetComponent<AudioSource>();
+        
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!sound.isPlaying)
+        {
+            sound.PlayOneShot(theme);
+        }
         if (Input.GetKey(KeyCode.N))
         {
             character1.gameObject.SendMessage("Activate");

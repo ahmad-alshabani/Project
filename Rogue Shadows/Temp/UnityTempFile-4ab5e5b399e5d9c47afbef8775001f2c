@@ -1,0 +1,753 @@
+/target:library
+/nowarn:0169
+/nowarn:0649
+/out:Temp/Unity.ShaderGraph.Editor.dll
+/debug:portable
+/optimize-
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.dll
+/reference:Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEditor.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/Managed/UnityEditor.Graphs.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+/reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
+/reference:"F:/game dev/Projects/Project/Rogue Shadows/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll"
+/reference:"F:/game dev/Projects/Project/Rogue Shadows/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll"
+/reference:"F:/game dev/Projects/Project/Rogue Shadows/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll"
+/reference:D:/editors/2019.4.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll
+/reference:D:/editors/2019.4.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll
+/define:UNITY_2019_4_16
+/define:UNITY_2019_4
+/define:UNITY_2019
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:UNITY_2019_4_OR_NEWER
+/define:UNITY_INCLUDE_TESTS
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:INCLUDE_DYNAMIC_GI
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:PLATFORM_SUPPORTS_MONO
+/define:RENDER_SOFTWARE_CURSOR
+/define:ENABLE_VIDEO
+/define:PLATFORM_STANDALONE
+/define:PLATFORM_STANDALONE_WIN
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_STANDALONE
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_MOVIES
+/define:ENABLE_NETWORK
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CLUSTERINPUT
+/define:GFXDEVICE_WAITFOREVENT_MESSAGEPUMP
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_MONO
+/define:NET_4_6
+/define:ENABLE_PROFILER
+/define:DEBUG
+/define:TRACE
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_WIN
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_BURST_AOT
+/define:UNITY_TEAM_LICENSE
+/define:ENABLE_VSTU
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\AssemblyInfo.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\AssetCallbacks\CreateShaderGraph.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\AssetCallbacks\CreateShaderSubGraph.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\ActiveFields.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\GenerationResults.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\GenerationUtils.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\GraphCompilationResult.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\MatrixNames.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\PropertyCollector.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\ShaderGenerator.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\ShaderGeneratorNames.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\ShaderSourceMap.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\ShaderSpliceUtil.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\ShaderStringBuilder.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\CodeGen\SubShaderGenerator.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Attributes\BuiltinKeywordAttribute.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Enumerations\Precision.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\AbstractMaterialGraphAsset.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\AbstractShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\BitangentMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\BooleanMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\BooleanShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\ColorMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\ColorRGBMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\ColorShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\CubemapInputMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\CubemapMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\CubemapShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\DynamicMatrixMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\DynamicValueMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\DynamicVectorMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\GradientInputMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\GradientMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\GradientShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\GraphData.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\GroupData.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\IMaterialGraphAsset.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\IMaterialSlotHasValue.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\MaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Matrix2MaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Matrix2ShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Matrix3MaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Matrix3ShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Matrix4MaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Matrix4ShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\MatrixShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\MinimalGraphData.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\NormalMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\ParentGroupChange.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\PositionMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\PreviewMode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\PreviewProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\SamplerStateMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\SamplerStateShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\ScreenPositionMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\SerializableCubemap.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\SerializableGuid.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\SerializableMesh.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\SerializableTexture.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\SerializableTextureArray.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\ShaderGraphRequirements.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\ShaderInput.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\ShaderKeyword.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\SpaceMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\StickyNoteData.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\TangentMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Texture2DArrayInputMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Texture2DArrayMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Texture2DArrayShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Texture2DInputMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Texture2DMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Texture2DShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Texture3DInputMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Texture3DMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Texture3DShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\TextureSamplerState.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\UVMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Vector1MaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Vector1ShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Vector2MaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Vector2ShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Vector3MaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Vector3ShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Vector4MaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\Vector4ShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\VectorShaderProperty.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\VertexColorMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Graphs\ViewDirectionMaterialSlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Implementation\Edge.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Implementation\GraphObject.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Implementation\HasDependenciesAttribute.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Implementation\IHasDependencies.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Implementation\NodeUtils.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Implementation\SlotType.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\GenerationMode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\Graph\DrawState.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\Graph\GraphDrawingData.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\Graph\IEdge.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\Graph\INode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\Graph\IOnAssetEnabled.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\Graph\ISlot.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\Graph\SlotReference.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IGeneratesBodyCode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IGeneratesFunction.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IGroupItem.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IHasSettings.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireBitangent.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireCameraOpaqueTexture.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireDepthTexture.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireFaceSign.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireMeshUV.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireNormal.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequirePosition.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireScreenPosition.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireTangent.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireTime.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireVertexColor.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireVertexSkinning.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\IMayRequireViewDirection.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Interfaces\NeededCoordinateSpace.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\AlphaMode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\DistortionMode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\DoubleSidedMode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\EmissionGIMode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\IPBRSubShader.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\ISubShader.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\IUnlitSubShader.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\PBRMasterNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\SpecularOcclusionMode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\UnlitMasterNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\MasterNodes\VfxMasterNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\AbstractMaterialNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Adjustment\ChannelMixerNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Adjustment\ContrastNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Adjustment\HueNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Adjustment\InvertColorsNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Adjustment\ReplaceColorNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Adjustment\SaturationNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Adjustment\WhiteBalanceNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Blend\BlendMode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Blend\BlendNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Filter\DitherNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Mask\ChannelMaskNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Mask\ColorMaskNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Normal\NormalBlendNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Normal\NormalFromHeightNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Normal\NormalFromTextureNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Normal\NormalReconstructZNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Normal\NormalStrengthNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Normal\NormalUnpackNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Artistic\Utility\ColorspaceConversion.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Channel\CombineNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Channel\FlipNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Channel\SplitNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Channel\SwizzleNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\CodeFunctionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\FormerNameAttribute.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\FunctionMultiInput.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\GeometryNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\GuidEncoder.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\IMasterNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\IPropertyFromNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\BooleanNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\ColorNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\ConstantNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\IntegerNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\SliderNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\TimeNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\Vector1Node.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\Vector2Node.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\Vector3Node.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Basic\Vector4Node.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Geometry\BitangentVectorNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Geometry\NormalVectorNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Geometry\PositionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Geometry\ScreenPositionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Geometry\TangentVectorNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Geometry\UVNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Geometry\VertexColorNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Geometry\ViewDirectionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Gradient\GradientNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Gradient\SampleGradientNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Lighting\AmbientNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Lighting\BakedGINode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Lighting\ReflectionProbeNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Matrix\Matrix2Node.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Matrix\Matrix3Node.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Matrix\Matrix4Node.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Matrix\TransformationMatrixNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\PBR\DielectricSpecularNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\PBR\MetalReflectanceNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\PropertyNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Scene\CameraNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Scene\FogNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Scene\ObjectNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Scene\SceneColorNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Scene\SceneDepthNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Scene\ScreenNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\CubemapAssetNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\SampleCubemapNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\SampleTexture2DArrayNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\SampleTexture2DLODNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\SampleTexture2DNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\SampleTexture3DNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\SamplerStateNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\TexelSizeNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\Texture2DArrayAssetNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\Texture2DAssetNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Input\Texture\Texture3DAssetNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\MasterNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\AbsoluteNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\ExponentialNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\LengthNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\LogNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\ModuloNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\NegateNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\NormalizeNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\PosterizeNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\ReciprocalNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Advanced\ReciprocalSquareRootNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Basic\AddNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Basic\DivideNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Basic\MultiplyNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Basic\PowerNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Basic\SquareRootNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Basic\SubtractNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Derivative\DDXNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Derivative\DDXYNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Derivative\DDYNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Interpolation\InverseLerpNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Interpolation\LerpNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Interpolation\SmoothstepNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Matrix\MatrixConstructionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Matrix\MatrixDeterminantNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Matrix\MatrixSplitNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Matrix\MatrixTransposeNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Range\ClampNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Range\FractionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Range\MaximumNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Range\MinimumNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Range\OneMinusNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Range\RandomRangeNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Range\RemapNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Range\SaturateNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Round\CeilingNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Round\FloorNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Round\RoundNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Round\SignNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Round\StepNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Round\TruncateNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\ArccosineNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\ArcsineNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\Arctangent2Node.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\ArctangentNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\CosineNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\DegreesToRadiansNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\HyperbolicCosineNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\HyperbolicSineNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\HyperbolicTangentNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\RadiansToDegreesNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\SineNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Trigonometry\TangentNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\CrossProductNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\DistanceNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\DotProductNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\FresnelEffectNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\ProjectionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\ReflectionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\RejectionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\RotateAboutAxisNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\SphereMaskNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Vector\TransformNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Wave\NoiseSineWaveNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Wave\SawtoothWaveNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Wave\SquareWaveNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Math\Wave\TriangleWaveNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\NormalMapSpace.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Procedural\CheckerboardNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Procedural\Noise\GradientNoiseNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Procedural\Noise\SimpleNoiseNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Procedural\Noise\VoronoiNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Procedural\Shape\EllipseNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Procedural\Shape\PolygonNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Procedural\Shape\RectangleNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Procedural\Shape\RoundedRectangleNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\ShaderStage.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\SlotValue.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\TitleAttribute.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\UV\FlipbookNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\UV\PolarCoordinatesNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\UV\RadialShearNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\UV\RotateNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\UV\SpherizeNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\UV\TilingAndOffsetNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\UV\TriplanarNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\UV\TwirlNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\CustomFunctionNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\KeywordNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\AllNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\AndNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\AnyNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\BranchNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\ComparisonNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\IsFrontFaceNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\IsInfiniteNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\IsNanNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\NandNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\NotNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\Logic\OrNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\PreviewNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Utility\SubGraphNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Nodes\Vertex Skinning\LinearBlendSkinningNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\SubGraph\SubGraphAsset.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\SubGraph\SubGraphOutputNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\SurfaceModel\SurfaceMaterialOptions.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\SurfaceModel\SurfaceMaterialTags.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\UniversalPipeline\UniversalFastBlinnMasterNode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\DictionaryPool.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\FunctionRegistry.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\GradientUtil.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\GraphUtil.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\Identifier.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\IndexSetPool.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\KeywordCollector.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\KeywordDependentCollection.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\KeywordUtil.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\ListPool.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\Logging.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\ObjectPool.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\PooledList.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\PooledObject.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\PrecisionUtil.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\PropertyUtil.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\QueuePool.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\ScreenSpaceType.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\SerializationHelper.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\ShaderGraphRequirementsPerKeyword.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\SlotValueTypeUtil.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\StackPool.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\TextUtil.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Data\Util\UvChannel.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\DefaultShaderIncludes.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Blackboard\BlackboardFieldKeywordView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Blackboard\BlackboardFieldPropertyView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Blackboard\BlackboardFieldView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Blackboard\BlackboardProvider.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Colors\CategoryColors.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Colors\ColorManager.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Colors\CustomColorData.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Colors\IColorProvider.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Colors\NoColors.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Colors\PrecisionColors.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Colors\UserColors.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\ButtonControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\ChannelEnumControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\ChannelEnumMaskControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\ChannelMixerControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\ColorControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\CubemapControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\DefaultControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\DielectricSpecularControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\EnumControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\EnumConversionControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\GradientControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\IControlAttribute.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\IntegerControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\ObjectControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\PopupControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\SliderControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\Texture3DControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\TextureArrayControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\TextureControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\ToggleControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Controls\VectorControl.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\EdgeConnectorListener.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\INodeModificationListener.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Inspector\MasterPreviewView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Inspector\WindowDockingLayout.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Manipulators\Draggable.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Manipulators\ResizeBorderFrame.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Manipulators\ResizeSideHandle.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Manipulators\Scrollable.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Manipulators\WindowDraggable.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\MaterialGraphEditWindow.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\MaterialGraphPreviewGenerator.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\PreviewManager.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\PreviewRate.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\SearchWindowProvider.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\FloatField.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\GradientEdge.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\GraphEditorView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\HlslFunctionView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\IShaderNodeView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\MaterialGraphView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\MaterialNodeView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\NodeSettingsView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\PBRSettingsView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\PortInputView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\PreviewSceneResources.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\PropertyNodeView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\PropertyRow.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\PropertySheet.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\ReorderableSlotListView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\ShaderGroup.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\ShaderPort.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\BooleanSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\ColorRGBSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\ColorSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\CubemapSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\GradientSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\LabelSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\MultiFloatSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\ScreenPositionSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\Texture3DSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\TextureArraySlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\TextureSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\Slots\UVSlotControlView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\StickyNote.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Drawing\Views\UnlitSettingsView.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Importers\ShaderGraphAssetPostProcessor.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Importers\ShaderGraphImporter.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Importers\ShaderGraphImporterEditor.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Importers\ShaderGraphMetadata.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Importers\ShaderSubGraphImporter.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Importers\ShaderSubGraphImporterEditor.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\Data\KeywordDescriptor.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\Data\KeywordEntry.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\Data\ShaderPass.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\Enumerations\KeywordDefinition.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\Enumerations\KeywordScope.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\Enumerations\KeywordType.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\Enumerations\NormalDropOffSpace.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\Enumerations\PropertyType.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\GraphCode.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\OutputMetadata.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Internal\ShaderGraphVfxAsset.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\ShaderGUI\PBRMasterGUI.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\ShaderGraphAnalytics.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\ShaderGraphPreferences.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\CompatibilityExtensions.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\CopyPasteGraph.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\CreateSerializableGraph.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\Documentation.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\FileUtilities.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\IndexSet.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\MessageManager.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\TypeMapper.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\TypeMapping.cs"
+"F:\game dev\Projects\Project\Rogue Shadows\Library\PackageCache\com.unity.shadergraph@7.3.1\Editor\Util\UIUtilities.cs"
