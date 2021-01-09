@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject fps, weapon, objCamera,canvas;
-    public GameObject heliCopter,heliCamera;
+    public GameObject heliCopter,heliCamera,canvas2;
     public Vector3 myPos;
     public string fpsScr, weaponScr, cameraScr, heliScript,heliCamScr;
     public int inControl = 1;
+    public int enemyCount = 6;
 
     AudioSource sound;
     [SerializeField] AudioClip theme;
+    [SerializeField] AudioSource soundFX;
+    [SerializeField] AudioClip winFX;
 
     public Transform heli;
     public Transform fpsPlayer;
@@ -25,17 +28,32 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         sound = GetComponent<AudioSource>();
-        
-        
+        sound.PlayOneShot(theme);
+
     }
 
+    void LoadFirstLevel()
+    {
+        print("Round 1");
+        SceneManager.LoadScene(0);
+    }
     // Update is called once per frame
     void Update()
     {
-        if (!sound.isPlaying)
+        if (enemyCount == 0)
+        {
+            sound.Stop();
+            if (!soundFX.isPlaying)
+            {
+                soundFX.PlayOneShot(winFX);
+            }
+            Invoke("LoadFirstLevel", 5);
+        }
+
+        /*if (!sound.isPlaying)
         {
             sound.PlayOneShot(theme);
-        }
+        }*/
         if (Input.GetKey(KeyCode.N))
         {
             character1.gameObject.SendMessage("Activate");
@@ -79,6 +97,8 @@ public class GameManager : MonoBehaviour
             (heliCamera.GetComponent(heliCamScr) as MonoBehaviour).enabled = true;
             heliCopter.SetActive(true);
             heliCamera.SetActive(true);
+            canvas2.SetActive(true);
+            //canvas2.SetActive(true);
         }
         else if(inControl == 1 )
         {
@@ -86,6 +106,7 @@ public class GameManager : MonoBehaviour
             (heliCamera.GetComponent(heliCamScr) as MonoBehaviour).enabled = false;
             //heliCopter.SetActive(false);
             heliCamera.SetActive(false);
+            canvas2.SetActive(false);
 
             inControl = 2;
             (fps.GetComponent(fpsScr) as MonoBehaviour).enabled = true;

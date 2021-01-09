@@ -9,8 +9,8 @@ public class Gun : MonoBehaviour
     public float fireRate = 15f;
     public float impactForce = 30f;
 
-    public int maxAmmo = 10;
-    private int gunAmmo = 10;
+    public int maxAmmo = 30;
+    private int gunAmmo = 30;
     public float reloadTime = 1.5f;
     private bool isReloading = false;
 
@@ -49,7 +49,7 @@ public class Gun : MonoBehaviour
         if (isReloading)
             return;
 
-        if (gunAmmo <= 0)
+        if (gunAmmo <= 0 || Input.GetKey(KeyCode.R))
         {
             StartCoroutine(Reload());
             return;
@@ -91,7 +91,7 @@ public class Gun : MonoBehaviour
             {
                 Debug.Log(hit.transform.name);
 
-                Target target = hit.transform.GetComponent<Target>();
+                EnemyLogic target = hit.transform.GetComponent<EnemyLogic>();
                 if (target != null)
                 {
                     target.TakeDamage(damage);

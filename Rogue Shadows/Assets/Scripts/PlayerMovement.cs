@@ -1,14 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
     CharacterController character;
-
+    [SerializeField] GameManager gmanager;
+    [SerializeField] GameObject gameOver;
     public float speed = 12f;
     public float gravity = -9.8f;
     public float jumpHeight = 3f;
+    public float health = 100f;
+
+    public HealthBar healthBar;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -24,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 myPos;
     public Transform Helicopter;
 
+    [SerializeField] AudioSource deathFX;
+    [SerializeField] AudioClip death;
     AudioSource playerFX;
     [SerializeField] AudioClip footSteps;
 
@@ -31,11 +38,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        //healthBar = GetComponent<HealthBar>();
+        health = 100f;
         character = GetComponent<CharacterController>();
         playerFX = GetComponent<AudioSource>();
     }
     void Update()
     {
+        healthBar.SetHealth(health);
+        if(health < 0f)
+        {
+            gameOver.SetActive(true);
+            
+            Invoke("LoadFirstLevel", 3);
+        }
+
         if (inHelicopter && Input.GetKey(KeyCode.E)){
             transform.position = Helicopter.position + myPos;
         }
@@ -86,6 +103,22 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(Vector3.up * 5 * Input.GetAxisRaw("Vertical") * Time.deltaTime);
         }
 
+    }
+    void LoadFirstLevel()
+    {
+        print("Round 1");
+        SceneManager.LoadScene(0);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == ("Bullet"))
+        {
+            if (!deathFX.isPlaying)
+            {
+                deathFX.PlayOneShot(death);
+            }
+            health = health - 10f;
+        }
     }
 
     void Activate()

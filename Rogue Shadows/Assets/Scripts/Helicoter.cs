@@ -12,6 +12,7 @@ public class Helicoter : MonoBehaviour
     public bool inControl = true;
     bool hasExploded = false;
 
+    public AltitudeBar altitudeBar;
     AudioSource helicopterFX;
     [SerializeField] AudioSource soundFX;
     public bool isGrounded;
@@ -19,6 +20,7 @@ public class Helicoter : MonoBehaviour
     private bool isWin;
     int loadingTime = 4;
 
+    float altitude;
 
     bool inputEnabled = false;
 
@@ -34,6 +36,7 @@ public class Helicoter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        altitude = transform.position.y;
         rb = GetComponent<Rigidbody>();
         helicopterFX = GetComponent<AudioSource>();
         soundFX = GetComponent<AudioSource>();
@@ -42,6 +45,8 @@ public class Helicoter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        altitude = transform.position.y;
+        altitudeBar.SetAltitude(altitude);
         if (isControlEnabled)
         {
             Thrust();
