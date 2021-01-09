@@ -18,17 +18,26 @@ Good Luck!
 ### HOW TO PLAY
 **Helicopter**
 Space - Ascend
+
 A - Left
+
 D - Right
 
 **FPS**
 W - forward
+
 S - Backward
+
 D - Right
+
 A - Left
+
 Space - Jump
+
 Mouse1 - Shoot
+
 R - Reload
+
 
 E - Enter\Exit Helicopter
 
