@@ -17,6 +17,7 @@ Good Luck!
 
 ### HOW TO PLAY
 **Helicopter**
+
 Space - Ascend
 
 A - Left
@@ -24,6 +25,7 @@ A - Left
 D - Right
 
 **FPS**
+
 W - forward
 
 S - Backward
