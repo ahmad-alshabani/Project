@@ -16,6 +16,7 @@ The road is filled with AA-Turrets, use **Rogue Shadows** to reach the objective
 Good Luck!
 
 ### HOW TO PLAY
+----
 **Helicopter**
 
 Space - Ascend
